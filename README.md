@@ -1,6 +1,7 @@
 # ARDungeon
 
-Temporary name for the project to create an Augmented Reality game for android.
+Temporary name for the project.
+We are creating an Augmented Reality game for android.
 
 # Tools
 
