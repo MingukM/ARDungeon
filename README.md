@@ -25,27 +25,27 @@ Google Maps: API for features that will be added later on<br />
 		* inventory
 ## Dungeon
 
-Players do not have be at certain places to access dungoen.<br />
-They can enter dungeon at anytime and at anywhere.<br />
+* Players do not have be at certain places to access dungoen.
+* They can enter dungeon at anytime and at anywhere.
 
 ## Character
 
-For the time being, there will be only one class and few skills for character.<br />
-The charcter's design will be fixed, too.<br />
-However, in the future, we will try to add customization and more classes with more skills<br />
+* For the time being, there will be only one class and few skills for character.
+* The charcter's design will be fixed, too.
+* However, in the future, we will try to add customization and more classes with more skills.
 
 ## Monsters
 
-The monsters that show up will vary based on your lacation.<br />
-In the future, we might add monsters that spawn based on weather.<br />
+* The monsters that show up will vary based on your lacation.
+* In the future, we might add monsters that spawn based on weather.
 
 ## Base camp
 
-The base camp is what users will see when they start the game.<br />
-Character can wander around on the plane.<br />
-From base camp, users can enter dungeon.<br />
-If possible, there will be camp fire at the center and tent on either side of the plane.<br />
-In the future, users will be able to decorate their base camp.<br />
+* The base camp is what users will see when they start the game.
+* Character can wander around on the plane.
+* From base camp, users can enter dungeon.
+* If possible, there will be camp fire at the center and tent on either side of the plane.
+* In the future, users will be able to decorate their base camp.
 
 
 
