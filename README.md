@@ -12,8 +12,8 @@ Google Maps: API for features that will be added later on<br />
 
 # Features
 
-* Allowing you to set your location as your base which then creates a 10ft radius circle around the location
-	* As long as your are in the circle, your hp and mp fill themselves.
+* Allowing users to set their location as their base which then creates a 10ft radius circle around the location
+	* As long as users are in the circle, the character's hp and mp will fill themselves.
 	
 	## Basic UI:
 	* Virtual Joystick
@@ -25,8 +25,8 @@ Google Maps: API for features that will be added later on<br />
 
 	## Dungeon
 
-	* Players do not have be at certain places to access dungoen.
-	* They can enter dungeon at anytime and at anywhere.
+	* Users do not have be at certain places to access dungoen.
+	* Users can enter dungeon at anytime and at anywhere.
 
 	## Character
 
@@ -36,7 +36,7 @@ Google Maps: API for features that will be added later on<br />
 
 	## Monsters
 
-	* The monsters that show up will vary based on your lacation.
+	* The monsters that show up will vary based on user's lacation.
 	* In the future, we might add monsters that spawn based on weather.
 
 	## Base camp
