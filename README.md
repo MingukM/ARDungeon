@@ -22,17 +22,17 @@ Google Maps: API for features that will be added later on<br />
 		* shops
 		* character status
 		* inventory
-
-	## Dungeon
-
-	* Users do not have be at certain places to access dungoen.
-	* Users can enter dungeon at anytime and at anywhere.
-
+		
 	## Character
 
 	* For the time being, there will be only one class and few skills for character.
 	* The charcter's design will be fixed, too.
 	* However, in the future, we will try to add customization and more classes with more skills.
+
+	## Dungeon
+
+	* Users do not have be at certain places to access dungoen.
+	* Users can enter dungeon at anytime and at anywhere.
 
 	## Monsters
 
