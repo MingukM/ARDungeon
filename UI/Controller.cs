@@ -27,8 +27,8 @@ public class Controller : MonoBehaviour {
 		// Rotation of the object
 		if (x != 0 && y != 0) {
 			transform.eulerAngles = new Vector3(transform.eulerAngles.x, 
-												Mathf.Atan2(x,y) * Mathf.Rad2Deg, 
-												transform.eulerAngles.z);
+							    Mathf.Atan2(x,y) * Mathf.Rad2Deg, 
+							    transform.eulerAngles.z);
 		}
 	}
 }
