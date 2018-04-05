@@ -15,13 +15,13 @@ Google Maps: API for features that will be added later on<br />
 * Allowing you to set your location as your base which then creates a 10ft radius circle around the location
 	* As long as your are in the circle, your hp and mp fill themselves.
 	
-	 ##Basic UI:
-		* Virtual Joystick
-		* HP/MP bars with Character portrait
-		* Buttons to enter dungeons and other features:
-			* shops
-			* character status
-			* inventory
+	##Basic UI:
+	* Virtual Joystick
+	* HP/MP bars with Character portrait
+	* Buttons to enter dungeons and other features:
+		* shops
+		* character status
+		* inventory
 
 	## Dungeon
 
