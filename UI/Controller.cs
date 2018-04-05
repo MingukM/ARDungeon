@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
+// code is from https://www.youtube.com/watch?v=khavGQ7Dy3c
+
 public class Controller : MonoBehaviour {
 
 	private Rigidbody rb; 
