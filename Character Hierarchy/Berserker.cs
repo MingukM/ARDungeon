@@ -4,18 +4,15 @@ namespace AssemblyCSharp
 {
 	public class Berserker: Warrior
 	{
-		private bool isBerserk;
-
-		public Berserker ()
-		{
-			isBerserk = true;
+		public Berserker (){
+			className = "Berserker";
 		}
 
-		int berserk(bool ib){
+		void Berserk(bool ib){
 			if (ib) {
-				pow = pow * 2;
-				dex = dex / 2;
-				def = def / 2;
+				power = power * 2;
+				dexterity = dexterity / 2;
+				defense = defense / 2;
 			}
 		}
 	}

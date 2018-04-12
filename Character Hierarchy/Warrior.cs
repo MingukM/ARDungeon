@@ -1,28 +1,19 @@
-﻿using System;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-namespace AssemblyCSharp
+public class Warrior: Character
 {
-	public class Warrior: Character
-	{
-		protected int swordProficiency;
+	protected int swordProficiency;
 
-		public Warrior ()
-		{
-			swordProficiency = 10;
+	public Warrior (){
+		className = "Warrior";
+		swordProficiency = 10;
+	}
 
-			pow = pow + 10;
-			dex = dex - 5;
-		}
-
-		int getSwordProficiency(){
-			return swordProficiency;
-		}
-
-		void setSwordProficiency(int sp){
-			swordProficiency = sp;
-		}
-
-
+	int SwordProficiency{
+		get{ return swordProficiency; }
+		set{ swordProficiency = value; }
 	}
 }
 

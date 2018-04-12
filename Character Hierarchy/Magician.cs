@@ -1,18 +1,18 @@
-﻿using System;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-namespace AssemblyCSharp
+
+public class Magician: Character
 {
-	public class Magician: Character
-	{
-		protected int magicAffinity;
+	protected int magicAffinity;
+	protected int mPow;
 
-		public Magician ()
-		{
-			magicAffinity = 10;
-			totalMp = totalMp + 10;
-			intell = intell + 5;
-			pow = pow - 5;
-		}
+	public Magician ()
+	{
+		className = "Mage";
+		magicAffinity = 10;
+		mPow = 10;
 	}
 }
 
