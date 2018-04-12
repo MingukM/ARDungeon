@@ -22,25 +22,27 @@ public class RandomMovement : MonoBehaviour {
 	Vector3 randomDirection;                // Random, constantly changing direction from a narrow range for natural motion
 
 
-	void OnCollisionEnter (Collision col) 
+	void OnCollisionEnter (Collision col)
 	{
 
-		if (col.gameObject.tag == collisionTags[0]) {                   //  Tag it with a wall or other object
-			GetComponent<AudioSource>().PlayOneShot (collisionSound, 2.0f);         //  Plays a sound on collision
+		if (col.gameObject.tag == collisionTags [0]) {                   //  Tag it with a wall or other object
+			GetComponent<AudioSource> ().PlayOneShot (collisionSound, 2.0f);         //  Plays a sound on collision
 			baseDirection = baseDirection + Random.Range (-30, 30);   // Switch to a new direction on collision
 
 			// use the above code as a template for all the collisionTags
 			// add here.. and on.. and on..
 		}
-
-		function Update() 
-
-		{
-
-			randomDirection = new Vector3(0, Mathf.Sin(timeVar) * (rotationRange / 2) + baseDirection, 0); //   Moving at random angles 
-			timeVar += step;
-			speed = Random.Range(minSpeed, maxSpeed);              //      Change this range of numbers to change speed
-			GetComponent<Rigidbody>().AddForce(transform.forward * speed);
-			transform.Rotate(randomDirection * Time.deltaTime * 10.0f);        
-		}
 	}
+
+	void Update() 
+
+	{
+
+		randomDirection = new Vector3(0, Mathf.Sin(timeVar) * (rotationRange / 2) + baseDirection, 0); //   Moving at random angles 
+		timeVar += step;
+		speed = Random.Range(minSpeed, maxSpeed);              //      Change this range of numbers to change speed
+		GetComponent<Rigidbody>().AddForce(transform.forward * speed);
+		transform.Rotate(randomDirection * Time.deltaTime * 10.0f);        
+	}
+}
+	
