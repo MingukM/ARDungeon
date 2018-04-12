@@ -1,75 +1,94 @@
-﻿using System;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-namespace AssemblyCSharp
+public class Character
 {
-	public class Character
+
+	protected string className;
+
+	protected int characterLvl;
+	protected int exp;
+
+	// variables for character health point
+	protected int totalHp;
+	protected int currentHp;
+
+	// variables for character magic point
+	protected int totalMp;
+	protected int currentMp;
+
+	// variables for character parameter
+	protected int power;
+	protected int defense;
+	protected int intelligence;
+	protected int dexterity;
+	protected int luck;
+
+	// constructor
+	public Character ()
 	{
-		// variables for character level
-		protected int lvl;
-		protected int exp;
+		className = "Novice";
 
-		// variables for character health point
-		protected int totalHp;
-		protected int currentHp;
+		totalHp = 100;
+		currentHp = totalHp;
+	
+		totalHp = 100;
+		currentMp = totalMp;
 
-		// variables for character magic point
-		protected int totalMp;
-		protected int currentMp;
+	}
 
-		// variables for character parameter
-		protected int pow;
-		protected int def;
-		protected int intell;
-		protected int dex;
-		protected int luc;
+	// getter for total hp of character
+	int TotalHp(){
+		return totalHp;
+	}
 
-		// constructor
-		public Character ()
-		{
-			lvl = 1;
-			exp = 0;
+	// getter for total mp of character
+	int TotalMp(){
+		return totalMp;
+	}
 
-			totalHp = 100;
-			currentHp = totalHp;
+	// getter and setter for current hp of character
+	int CurrentHp{
+		get{return currentHp;}
+		set{currentHp = value;}
+	}
 
-			totalHp = 100;
-			currentMp = totalMp;
+	// getter and setter for current mp of character
+	int CurrentMp{
+		get{ return currentMp; }
+		set{ currentMp = value; } 
+	}
 
-			pow = 0;
-			intell = 0;
-			dex = 0;
-			luc = 0;
+	// getter and setter for power
+	int Power {
+		get{ return power; }
+		set{ power = value; }
+	}
 
-		}
+	// getter and setter for defense
+	int Defense {
+		get{ return defense; }
+		set{ defense = value; }
+	}
 
-		// getter for total hp of character
-		int getTotalHp(){
-			return totalHp;
-		}
+	// getter and setter for intelligence
+	int Intelligence {
+		get{ return intelligence; }
+		set{ intelligence = value; }
+	}
 
-		// getter for total mp of character
-		int getTotalMp(){
-			return totalMp;
-		}
+	// getter and setter for dexterity
+	int Dexterity {
+		get{ return dexterity; }
+		set{ dexterity = value; }
+	}
 
-		// getter and setter for current hp of character
-		void setCurrentHp(int hp){
-
-			currentHp = hp;
-		}
-
-		int getCurrentHp(){
-			return currentHp;
-		}
-
-		// getter and setter for current mp of character
-		void setCurrentMp(int mp){
-			currentMp = mp;
-		}
-
-		int getCurrentMp(){
-			return currentMp;
-		}
+	// getter and setter for luck
+	int Luck {
+		get{ return luck; }
+		set{ luck = value; }
 	}
 }
+
 
