@@ -1,12 +1,15 @@
 ﻿using System;
 
-namespace AssemblyCSharp
-{
-	public class ArcMage
-	{
-		public ArcMage ()
-		{
-		}
+public class ArcMage: Mage {
+	
+	private float magicEfficiency;
+
+	public ArcMage () {
+		ClassName = "ArcMage";
+		magicEfficiency = 10f;
+		totalMp = totalMp * characterLvl / magicEfficiency;
 	}
+
+	public float MagicEfficiency{ get; set;}
 }
 

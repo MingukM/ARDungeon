@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Warrior: Character
-{
-	protected int swordProficiency;
+public class Warrior: Character {
+	
+	protected float swordFighting;
 
 	public Warrior (){
 		className = "Warrior";
-		swordProficiency = 10;
+		swordFighting = 10f;
 	}
 
-	int SwordProficiency{
-		get{ return swordProficiency; }
-		set{ swordProficiency = value; }
-	}
+	public float SwordFighting{ get; set;}
 }
 
