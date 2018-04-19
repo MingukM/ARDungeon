@@ -4,91 +4,76 @@ using UnityEngine;
 
 public class Character
 {
-
+	protected string characterName;
 	protected string className;
 
 	protected int characterLvl;
-	protected int exp;
+	protected float exp;
 
 	// variables for character health point
-	protected int totalHp;
-	protected int currentHp;
+	protected float totalHp;
+	protected float currentHp;
 
 	// variables for character magic point
-	protected int totalMp;
-	protected int currentMp;
+	protected float totalMp;
+	protected float currentMp;
 
 	// variables for character parameter
-	protected int power;
-	protected int defense;
-	protected int intelligence;
-	protected int dexterity;
-	protected int luck;
+	protected float power;
+	protected float defense;
+	protected float intelligence;
+	protected float dexterity;
+	protected float luck;
 
-	// constructor
-	public Character ()
-	{
+	public Character() {
+		
 		className = "Novice";
+		characterLvl = 1;
+		exp = 0;
 
 		totalHp = 100;
 		currentHp = totalHp;
-	
-		totalHp = 100;
+
+		totalMp = 100;
 		currentMp = totalMp;
 
+		power = 3;
+		defense = 2;
+		intelligence = 3;
+		dexterity = 2;
+		luck = 3;
 	}
 
-	// getter for total hp of character
-	int TotalHp(){
-		return totalHp;
-	}
+	public string ClassName { get; set; }
 
-	// getter for total mp of character
-	int TotalMp(){
-		return totalMp;
-	}
+	public int CharacterLvl { get; set; }
+
+	public float Exp { get; set; }
+
+	// getter and setter for total hp of character
+	public float TotalHp { get; set; }
+
+	// getter and setter for total mp of character
+	public float TotalMp { get; set; }
 
 	// getter and setter for current hp of character
-	int CurrentHp{
-		get{return currentHp;}
-		set{currentHp = value;}
-	}
+	public float CurrentHp{ get; set;}
 
 	// getter and setter for current mp of character
-	int CurrentMp{
-		get{ return currentMp; }
-		set{ currentMp = value; } 
-	}
+	public float CurrentMp{ get; set; }
 
 	// getter and setter for power
-	int Power {
-		get{ return power; }
-		set{ power = value; }
-	}
+	public float Power { get; set; }
 
 	// getter and setter for defense
-	int Defense {
-		get{ return defense; }
-		set{ defense = value; }
-	}
+	public float Defense { get; set; }
 
 	// getter and setter for intelligence
-	int Intelligence {
-		get{ return intelligence; }
-		set{ intelligence = value; }
-	}
+	public float Intelligence { get; set; }
 
 	// getter and setter for dexterity
-	int Dexterity {
-		get{ return dexterity; }
-		set{ dexterity = value; }
-	}
+	public float Dexterity { get; set; }
 
 	// getter and setter for luck
-	int Luck {
-		get{ return luck; }
-		set{ luck = value; }
-	}
+	public float Luck { get; set; }
 }
-
-

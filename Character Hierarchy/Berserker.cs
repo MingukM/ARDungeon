@@ -1,20 +1,19 @@
-﻿using System;
+﻿  using System;
 
-namespace AssemblyCSharp
+public class Berserker: Warrior
 {
-	public class Berserker: Warrior
-	{
-		public Berserker (){
-			className = "Berserker";
-		}
+	private float berserk = 10;
 
-		void Berserk(bool ib){
-			if (ib) {
-				power = power * 2;
-				dexterity = dexterity / 2;
-				defense = defense / 2;
-			}
-		}
+	public Berserker (){
+		className = "Berserker";
+
+		totalHp = totalHp + 200;
+		totalMp = totalMp - 200;
+
+		power = power * ( 1 + berserk / 10);
+		defense = defense / ( 1 + berserk / 10);
+		dexterity = dexterity / ( 1 + berserk / 10);
+		intelligence = berserk / 3;
 	}
 }
 
