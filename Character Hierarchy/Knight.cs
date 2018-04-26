@@ -9,8 +9,6 @@ public class Knight: Warrior {
 	public Knight (){
 		className = "Knight";
 		swordProficiency = 5;
-		power = power * (1 + swordProficiency / 10);
-		dexterity = dexterity * (1 + swordProficiency / 20);
 	}
 
 	public int SwordProficiency{ get; set;}
