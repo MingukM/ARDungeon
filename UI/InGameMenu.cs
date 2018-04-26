@@ -9,4 +9,15 @@ public class InGameMenu : MonoBehaviour {
 	public void GoToDungeon(){
 		SceneManager.LoadScene ("Dungeon");
 	}
+
+	// Allow player to quit game
+	public void QuitGame() {
+		Debug.Log ("QUIT");
+		Application.Quit();
+	}
+
+	// Allow player to go back to base from the dungeon
+	public void GoToBase(){
+		SceneManager.LoadScene ("Base");
+	}
 }
