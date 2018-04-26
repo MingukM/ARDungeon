@@ -9,7 +9,6 @@ public class Mage: Character {
 	public Mage () {
 		className = "Mage";
 		magicPower = 10f;
-		totalMp = totalMp * 2;
 	}
 
 	public float MagicPower { get; set; }
